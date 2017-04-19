@@ -1,1 +1,40 @@
-{     "devDependencies": {         "ember-cli-materialize": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-ember-cli-materialize",     "homepage": "https://github.com/npmtest/node-npmtest-ember-cli-materialize",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-ember-cli-materialize.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [ember-cli-materialize (v0.21.0)](https://github.com/mike-north/ember-cli-materialize#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-cli-materialize.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-cli-materialize) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-cli-materialize.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-cli-materialize)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ember-cli-materialize": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-ember-cli-materialize",
+    "keywords": [
+        "coverage",
+        "test",
+        "ember-cli-materialize"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_ember_cli_materialize.js",
+    "name": "npmtest-ember-cli-materialize",
+    "nameAlias": "npmtest_ember_cli_materialize",
+    "nameOriginal": "npmtest-ember-cli-materialize",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-ember-cli-materialize.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
