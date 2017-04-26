@@ -1,6 +1,6 @@
 # npmtest-ember-cli-materialize
 
-#### test coverage for  [ember-cli-materialize (v0.21.0)](https://github.com/mike-north/ember-cli-materialize#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-cli-materialize.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-cli-materialize) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-cli-materialize.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-cli-materialize)
+#### basic test coverage for  [ember-cli-materialize (v0.21.0)](https://github.com/mike-north/ember-cli-materialize#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-cli-materialize.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-cli-materialize) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-cli-materialize.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-cli-materialize)
 
 #### An ember-cli addon for using Materialize (CSS Framework based on Material Design) in Ember applications.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-cli-materialize/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-cli-materialize/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ember-cli-materialize/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-cli-materialize/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-cli-materialize/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ember-cli-materialize/build/coverage.html/index.html)
 
@@ -133,7 +133,8 @@
         "start": "ember server",
         "test": "ember try:testall"
     },
-    "version": "0.21.0"
+    "version": "0.21.0",
+    "bin": {}
 }
 ```
 
